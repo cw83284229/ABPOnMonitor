@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+    <Import Project="..\..\common.props" />
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Tchivs.Abp.AspNetCore.Blazor.Theme.Bootstrap.WebAssembly" Version="1.0.6" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\OnMonitor.Blazor\OnMonitor.Blazor.csproj" />
+        <ProjectReference Include="..\OnMonitor.HttpApi.Client\OnMonitor.HttpApi.Client.csproj" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,7 @@
+{
+  "modules": {
+    "OnMonitor": {
+      "path": "OnMonitor.abpmdl.json"
+    }
+  }
+}

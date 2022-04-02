@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <BlazorWebAssemblyLoadAllGlobalizationData>true</BlazorWebAssemblyLoadAllGlobalizationData>
+  </PropertyGroup>
+
+  <ItemGroup>
+   
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Account.Application.Contracts" Version="5.1.4" />
+    <PackageReference Include="Volo.Abp.Autofac.WebAssembly" Version="5.1.4" />
+   
+  
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Theme\identity\Tchivs.Abp.Identity.Bootstrap.Blazor.WebAssembly\Tchivs.Abp.Identity.Bootstrap.Blazor.WebAssembly.csproj" />
+    <ProjectReference Include="..\OnMonitor.Host.Shared\OnMonitor.Host.Shared.csproj" />
+    <ProjectReference Include="..\..\src\OnMonitor.Blazor.WebAssembly\OnMonitor.Blazor.WebAssembly.csproj" />
+  </ItemGroup>
+
+</Project>

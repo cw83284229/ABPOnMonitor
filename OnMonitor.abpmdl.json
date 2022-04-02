@@ -1,0 +1,111 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {},
+      "host": {}
+    }
+  },
+  "packages": {
+    "OnMonitor.Domain.Shared": {
+      "path": "src/OnMonitor.Domain.Shared/OnMonitor.Domain.Shared.abppkg.json",
+      "folder": "src"
+    },
+    "OnMonitor.Domain": {
+      "path": "src/OnMonitor.Domain/OnMonitor.Domain.abppkg.json",
+      "folder": "src"
+    },
+    "OnMonitor.Application.Contracts": {
+      "path": "src/OnMonitor.Application.Contracts/OnMonitor.Application.Contracts.abppkg.json",
+      "folder": "src"
+    },
+    "OnMonitor.Application": {
+      "path": "src/OnMonitor.Application/OnMonitor.Application.abppkg.json",
+      "folder": "src"
+    },
+    "OnMonitor.EntityFrameworkCore": {
+      "path": "src/OnMonitor.EntityFrameworkCore/OnMonitor.EntityFrameworkCore.abppkg.json",
+      "folder": "src"
+    },
+    "OnMonitor.MongoDB": {
+      "path": "src/OnMonitor.MongoDB/OnMonitor.MongoDB.abppkg.json",
+      "folder": "src"
+    },
+    "OnMonitor.HttpApi": {
+      "path": "src/OnMonitor.HttpApi/OnMonitor.HttpApi.abppkg.json",
+      "folder": "src"
+    },
+    "OnMonitor.HttpApi.Client": {
+      "path": "src/OnMonitor.HttpApi.Client/OnMonitor.HttpApi.Client.abppkg.json",
+      "folder": "src"
+    },
+    "OnMonitor.TestBase": {
+      "path": "test/OnMonitor.TestBase/OnMonitor.TestBase.abppkg.json",
+      "folder": "test"
+    },
+    "OnMonitor.EntityFrameworkCore.Tests": {
+      "path": "test/OnMonitor.EntityFrameworkCore.Tests/OnMonitor.EntityFrameworkCore.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "OnMonitor.MongoDB.Tests": {
+      "path": "test/OnMonitor.MongoDB.Tests/OnMonitor.MongoDB.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "OnMonitor.Domain.Tests": {
+      "path": "test/OnMonitor.Domain.Tests/OnMonitor.Domain.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "OnMonitor.Application.Tests": {
+      "path": "test/OnMonitor.Application.Tests/OnMonitor.Application.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "OnMonitor.HttpApi.Host": {
+      "path": "host/OnMonitor.HttpApi.Host/OnMonitor.HttpApi.Host.abppkg.json",
+      "folder": "host"
+    },
+    "OnMonitor.Web": {
+      "path": "src/OnMonitor.Web/OnMonitor.Web.abppkg.json",
+      "folder": "src"
+    },
+    "OnMonitor.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/OnMonitor.HttpApi.Client.ConsoleTestApp/OnMonitor.HttpApi.Client.ConsoleTestApp.abppkg.json",
+      "folder": "test"
+    },
+    "OnMonitor.Web.Host": {
+      "path": "host/OnMonitor.Web.Host/OnMonitor.Web.Host.abppkg.json",
+      "folder": "host"
+    },
+    "OnMonitor.IdentityServer": {
+      "path": "host/OnMonitor.IdentityServer/OnMonitor.IdentityServer.abppkg.json",
+      "folder": "host"
+    },
+    "OnMonitor.Host.Shared": {
+      "path": "host/OnMonitor.Host.Shared/OnMonitor.Host.Shared.abppkg.json",
+      "folder": "host"
+    },
+    "OnMonitor.Web.Unified": {
+      "path": "host/OnMonitor.Web.Unified/OnMonitor.Web.Unified.abppkg.json",
+      "folder": "host"
+    },
+    "OnMonitor.Blazor": {
+      "path": "src/OnMonitor.Blazor/OnMonitor.Blazor.abppkg.json",
+      "folder": "src"
+    },
+    "OnMonitor.Blazor.Host": {
+      "path": "host/OnMonitor.Blazor.Host/OnMonitor.Blazor.Host.abppkg.json",
+      "folder": "host"
+    },
+    "OnMonitor.Blazor.Server": {
+      "path": "src/OnMonitor.Blazor.Server/OnMonitor.Blazor.Server.abppkg.json",
+      "folder": "src"
+    },
+    "OnMonitor.Blazor.WebAssembly": {
+      "path": "src/OnMonitor.Blazor.WebAssembly/OnMonitor.Blazor.WebAssembly.abppkg.json",
+      "folder": "src"
+    },
+    "OnMonitor.Blazor.Server.Host": {
+      "path": "host/OnMonitor.Blazor.Server.Host/OnMonitor.Blazor.Server.Host.abppkg.json",
+      "folder": "host"
+    }
+  }
+}
