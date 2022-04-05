@@ -1,0 +1,38 @@
+﻿@page "/Equiment/MonitorRoom"
+@using Tchivs.Abp.AspNetCore.Blazor.Theme.Bootstrap
+@using Volo.Abp.AspNetCore.Components.Web
+@using global::OnMonitor.Monitor
+@using global::OnMonitor.Samples
+@inherits BootstrapBlazorComponentBase
+@inject ISampleAppService  SampleAppService
+@inject IMonitorRoomAppService  MonitorRoomAppService
+<div>@TEST </div>
+<div>@TEST2 </div>
+
+<Table TItem="MonitorRoomDto" Items="@roomDtos">
+    <TableColumns>
+        <TableColumn @bind-Field="@context.Factory" Width="180" />
+        <TableColumn @bind-Field="@context.RoomLocation" />
+        <TableColumn @bind-Field="@context.RoomType" />
+    </TableColumns>
+</Table>
+
+
+@code {
+    public List<MonitorRoomDto> roomDtos = new List<MonitorRoomDto>();
+    public String TEST;
+    public String TEST2;
+    /// <summary>
+    /// OnInitialized 方法
+    /// </summary>
+    protected override async Task OnInitializedAsync()
+    {
+
+        var dt= await SampleAppService.GetAsync();
+
+        TEST = dt.Value.ToString();
+         TEST2 =await MonitorRoomAppService.GettoString();
+        await base.OnInitializedAsync();
+    }
+
+}

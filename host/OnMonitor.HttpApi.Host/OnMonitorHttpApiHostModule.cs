@@ -33,6 +33,7 @@ using Volo.Abp.SettingManagement.EntityFrameworkCore;
 using Volo.Abp.Swashbuckle;
 using Volo.Abp.TenantManagement.EntityFrameworkCore;
 using Volo.Abp.VirtualFileSystem;
+using Volo.Abp.AspNetCore.Mvc;
 
 namespace OnMonitor;
 
@@ -99,6 +100,15 @@ public class OnMonitorHttpApiHostModule : AbpModule
             options.Languages.Add(new LanguageInfo("zh-Hans", "zh-Hans", "简体中文"));
             options.Languages.Add(new LanguageInfo("zh-Hant", "zh-Hant", "繁體中文"));
        
+        });
+
+        //配置动态api
+        Configure<AbpAspNetCoreMvcOptions>(options =>
+
+        {
+            options.ConventionalControllers
+              .Create(typeof(OnMonitorApplicationModule).Assembly);
+
         });
 
         context.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)

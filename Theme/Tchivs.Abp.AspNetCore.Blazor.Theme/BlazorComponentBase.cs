@@ -9,7 +9,7 @@ namespace Tchivs.Abp.AspNetCore.Blazor.Theme
 {
     public abstract class BlazorComponentBase: AbpComponentBase
     {
-       [Inject,NotNull]protected IJSRuntime? JsRuntime { get; set; }
+        [Inject,NotNull]protected IJSRuntime? JsRuntime { get; set; }
         [Inject, NotNull] protected NavigationManager? Navigation { get; set; }
 
         protected BlazorComponentBase( )

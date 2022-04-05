@@ -2,6 +2,8 @@
 @inject IBrandingProvider _brandingProvider
 @inject IToolbarManager _toolbarManager
 @inherits BlazorComponentBase
+
+
 <div class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
@@ -30,7 +32,10 @@
                 </ul>
             </div>
         </div>
-
+      
+         <div class="nav-item">
+            <FullScreenButton class="nav-link p-2" Title="点击切换全屏模式" />
+        </div>
     </nav>
 
 </div>
@@ -42,7 +47,7 @@
 
     private List<RenderFragment> RightToolbarItemRenders { get; set; } = new List<RenderFragment>();
     private List<RenderFragment> LeftToolbarItemRenders { get; set; } = new List<RenderFragment>();
-
+    
     protected override async Task OnInitializedAsync()
     {
 
@@ -64,5 +69,6 @@
            });
         }
     }
-
+ 
+    
 }

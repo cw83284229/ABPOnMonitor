@@ -10,6 +10,7 @@ namespace Tchivs.Abp.AspNetCore.Blazor.Theme.Bootstrap
             context.Add("_content/Volo.Abp.AspNetCore.Components.Web/libs/abp/js/abp.js");
             context.Add("_content/Volo.Abp.AspNetCore.Components.Web/libs/abp/js/lang-utils.js");
             context.Add("_content/BootstrapBlazor/js/bootstrap.blazor.bundle.min.js");
+            context.Add("service-worker-register.js");
         }
 
         public void AddStyles(BundleContext context)

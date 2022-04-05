@@ -8,21 +8,62 @@
     <base href="/" />
 
     <!--ABP:Styles-->
-    <link href="global.css?_v=637844301972893414" rel="stylesheet"/>
-    <link href="main.css" rel="stylesheet"/>
+    <link href="global.css?_v=637844301972893414" rel="stylesheet" />
+    <link href="main.css" rel="stylesheet" />
+    <!--bootstrapblazor:Styles-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="icon-512.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style/loading.css">
+    <link rel="stylesheet" href="_content/BootstrapBlazor.FontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="_content/BootstrapBlazor/css/bootstrap.blazor.bundle.min.css">
+    <link rel="stylesheet" href="_content/BootstrapBlazor.Chart/css/bootstrap.blazor.chart.bundle.min.css">
+    <link rel="stylesheet" href="_content/BootstrapBlazor.Markdown/css/bootstrap.blazor.markdown.min.css">
+    <link rel="stylesheet" href="_content/BootstrapBlazor.Shared/lib/highlight/vs.css">
+    <link rel="stylesheet" href="_content/BootstrapBlazor.Shared/css/site.css">
     <!--/ABP:Styles-->
 </head>
 
 <body class="abp-application-layout bg-light">
     <div id="ApplicationContainer">
-        <div class="spinner">
-            <div class="double-bounce1"></div>
-            <div class="double-bounce2"></div>
+        <!--<div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+    </div>-->
+        <div class="loader" id="loading">
+            <div class="logo">
+                <div class="one common"></div>
+                <div class="two common"></div>
+                <div class="three common"></div>
+                <div class="four common"></div>
+                <div class="five common"></div>
+                <div class="six common"></div>
+                <div class="seven common"></div>
+                <div class="eight common"></div>
+            </div>
+            <div class="intro">
+                <img src="Image/icon-512.png" />
+                <span>精彩即将呈现</span>
+            </div>
+            <div class="bar">
+                <div class="progress"></div>
+            </div>
         </div>
     </div>
 
     <!--ABP:Scripts-->
     <script src="global.js?_v=637844301974183427"></script>
+    <!--bootstrapblazor:Scripts-->
+    <script src="_content/BootstrapBlazor/js/bootstrap.blazor.bundle.min.js"></script>
+    <script src="_content/BootstrapBlazor.Chart/js/bootstrap.blazor.chart.bundle.min.js"></script>
+    <script src="_content/BootstrapBlazor.TableExport/js/export.min.js"></script>
+    <script src="_content/BootstrapBlazor.Markdown/js/bootstrap.blazor.markdown.min.js"></script>
+    <script src="_content/BootstrapBlazor.Shared/lib/highlight/highlight.min.js"></script>
+    <script src="_content/BootstrapBlazor.Shared/js/common.js"></script>
+    <script src="_framework/blazor.webassembly.js" autostart="false"></script>
+    <script src="service-worker-register.js"></script>
+
     <!--/ABP:Scripts-->
 </body>
 </html>

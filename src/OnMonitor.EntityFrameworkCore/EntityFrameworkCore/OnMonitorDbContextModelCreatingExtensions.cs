@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using OnMonitor.Monitor;
 using Volo.Abp;
+using Volo.Abp.EntityFrameworkCore.Modeling;
 
 namespace OnMonitor.EntityFrameworkCore;
 
@@ -29,5 +31,28 @@ public static class OnMonitorDbContextModelCreatingExtensions
             b.HasIndex(q => q.CreationTime);
         });
         */
+
+
+        builder.Entity<Camera>(b =>
+        {
+            b.ToTable(OnMonitorDbProperties.DbTablePrefix + "Cameras", OnMonitorDbProperties.DbSchema);
+            b.ConfigureByConvention(); //auto configure for the base class props
+           // b.Property(x => x.Camera_ID).IsRequired().HasMaxLength(128);
+            //...
+        });
+      
+      
+        builder.Entity<Alarm>(b =>
+        {
+            b.ToTable(OnMonitorDbProperties.DbTablePrefix + "Alarms", OnMonitorDbProperties.DbSchema);
+            b.ConfigureByConvention(); //auto configure for the base class props
+           // b.Property(x => x.Id).IsRequired().HasMaxLength(128);
+        });
+        builder.Entity<MonitorRoom>(b =>
+        {
+            b.ToTable(OnMonitorDbProperties.DbTablePrefix + "MonitorRooms", OnMonitorDbProperties.DbSchema);
+            b.ConfigureByConvention();
+            /* Configure more properties here */
+        });
     }
 }
